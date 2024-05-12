@@ -211,6 +211,11 @@ NSInteger const kReceivedChatMessagesLimit = 100;
     return APIv1;
 }
 
+- (NSInteger)banAPIVersionForAccount:(TalkAccount *)account
+{
+    return APIv1;
+}
+
 - (NSInteger)signalingAPIVersionForAccount:(TalkAccount *)account
 {
     NSInteger signalingAPIVersion = APIv1;
